@@ -1,17 +1,17 @@
 # DENIS BORNEMAN
-
-## Contacts
+## **City**: Tomsk
+## **Contacts**
 ### [Email](mailto:chainsawfish@gmail.com)
 ### **Discord**: chainsawfish#5802
 
-## About me
+## **About me**
 I want to learn as much languages as I like and can. I like my two bold cats and my wife. I teach kids for learn math.
 
-## Hard skills
+## **Hard skills**
 I know **java, swift, javascript** and some other languages as well.
 
 
-## Code examples
+## **Code examples**
 
 Самая сложная буква в наборе (Swift) (yandex task)
 ```
@@ -59,7 +59,7 @@ print(maxLetter)
 
 
 
-## Education:
+## **Education:**
 **Tomsk State Pedagogical University**, ___faculty of computer Science and mathematics___, teacher of cs and math \ 2005-2011
 
 **English:** Intermediate 
