@@ -6,37 +6,43 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    
     <title>CV</title>
 </head>
 
 <body>
 
     <header>
+        <img class="header-logo" src="ava.jpeg" alt="Denis Borneman">
         <h1>DENIS BORNEMAN</h1>
     </header>
-
-    <div class="contacts">
-        <p>City: Tomsk</p>
-        <p> Email: chainsawfish@gmail.com</p>
-        <p>Discord: chainsawfish#5802</p>
-    </div>
-
     <main>
+        <div class="contacts sticky">
+            <h2>
+                <a href="mailto:chainsawfish@gmail.com">Email</a>  |  <a href="https://discordapp.com/users/chainsawfish#5802">Discord</a>
+            </h2>
+            </div>
         <div class="about">
-            <h2>About me</h2> I like to learn programming languages. I like my two bold cats and my wife. I teach kids
+            <h2>About me</h2> 
+            <p class="left-text">
+            I like to learn programming languages. I like my two bold cats and my wife. I teach kids
             for
             learn
             math.
+        </p>
         </div>
 
-        <div class="hard-skills">Hard skills
+        <div class="hard-skills">
+            <h2>Hard skills</h2>
+            <p class="left-text">
             I know java, swift, javascript and some other languages as well.
+        </p>
         </div>
 
         <div class="code-examples">
             <h2>Code examples</h2>
-            Самая сложная буква в наборе (Swift) (yandex task)
-            <code><pre>
+        <p class="left-text">Most complex letter in case(Swift)</p>
+            <code class="left-text"><pre>
     import Foundation
     var n: Int = Int(readLine()!)!
     var str: String = readLine()!
@@ -64,21 +70,23 @@
         </div>
 
         <div class="education">
-            <h2> Education:
+            <h2> Education
             </h2>
-            Tomsk State Pedagogical University, faculty of computer Science and mathematics, teacher of cs and math \
-            2005-2011
+            <p class="left-text">Tomsk State Pedagogical University, faculty of computer Science and mathematics, teacher of cs and math,
+            2005-2011</p>
 
         </div>
         <div class="languages">
-            English: Intermediate
+            <p class="left-text">English: Intermediate</p>
 
         </div>
     </main>
     <footer>
-        <a href="https://github.com/chainsawfish" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://rs.school/js/"><img src="https://rs.school/images/rs_school_js.svg" alt="RS SCHOOL"></a>
-    </footer>
+    <div>
+        <p><a href="https://github.com/chainsawfish" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p><a href="https://rs.school/js/"><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RS SCHOOL"></a></p>
+    </div>
+</footer>
 </body>
 
 </html>
