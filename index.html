@@ -42,18 +42,18 @@
         <div class="code-examples">
             <h2>Code examples</h2>
         <p >Most complex letter in case (Swift)</p>
-            <pre class="left-text"><code class="left-text">
+            <pre class="left-text">
+                <code class="left-text">
     import Foundation
     var n: Int = Int(readLine()!)!
     var str: String = readLine()!
     var hardness: String = readLine()!
     var maxIndex : Int = 0
     var maxLetter: String = ""
-    var hardnessArray = hardness.components(separatedBy: " ")
-        .map{Int($0)!}
+    var hardnessArray = hardness.components(separatedBy: " ").map{Int($0)!}
     var strArray = Array(str).map{String($0)}
     var speedArray = [String: Int]()
-    for i in 0..<strArray.count {
+    for i in 0..&lt; strArray.count {
         if i != 0 {
             speedArray[strArray[i]] = hardnessArray[i]-hardnessArray[i-1]
         }
