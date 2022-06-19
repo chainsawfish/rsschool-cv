@@ -1,7 +1,97 @@
 <!DOCTYPE html>
+<html lang="en">
+
 <head>
-    <title>My CV</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>CV</title>
 </head>
+
 <body>
-    <p>Hello!</p>
+
+    <header>
+        <img class="header-logo" src="ava.jpeg" alt="Denis Borneman">
+        <h1>DENIS BORNEMAN</h1>
+    </header>
+    <main>
+        <div class="contacts sticky">
+            <h2>
+                <a href="mailto:chainsawfish@gmail.com">Email</a>  |  <a href="https://discordapp.com/users/chainsawfish#5802" target="_blank">Discord</a>
+            </h2>
+            </div>
+        <div class="about">
+            <h2>About me</h2> 
+            <p class="left-text">
+            I like to learn programming languages. I like my two bold cats and my wife. I teach kids
+            for
+            learn
+            math.
+        </p>
+        </div>
+
+        <div class="hard-skills">
+            <h2>Hard skills</h2>
+            <p class="left-text">
+            I know java, swift, javascript and some other languages as well.
+        </p>
+        </div>
+
+        <div class="code-examples">
+            <h2>Code examples</h2>
+        <p >Most complex letter in case (Swift)</p>
+            <pre class="left-text">
+                <code class="left-text">
+    import Foundation
+    var n: Int = Int(readLine()!)!
+    var str: String = readLine()!
+    var hardness: String = readLine()!
+    var maxIndex : Int = 0
+    var maxLetter: String = ""
+    var hardnessArray = hardness.components(separatedBy: " ").map{Int($0)!}
+    var strArray = Array(str).map{String($0)}
+    var speedArray = [String: Int]()
+    for i in 0..&lt; strArray.count {
+        if i != 0 {
+            speedArray[strArray[i]] = hardnessArray[i]-hardnessArray[i-1]
+        }
+        else {
+            speedArray[strArray[i]] = hardnessArray[i]
+        }
+        if speedArray[strArray[i]]! >= maxIndex {
+            maxIndex = speedArray[strArray[i]]!
+            maxLetter = strArray[i]
+        }
+    }
+    print(maxLetter) 
+    </code>
+</pre>
+        </div>
+
+        <div class="education">
+            <h2> Education
+            </h2>
+            <p class="left-text">
+                <b>Tomsk State Pedagogical University</b> |
+                Faculty of computer Science and mathematics |
+                Teacher of cs and math |
+                <em>2005-2011</em>
+        </p>
+
+        </div>
+        <div class="languages">
+            <p class="left-text"><b>English:</b> Intermediate</p>
+
+        </div>
+    </main>
+    <footer>
+    <div>
+        <p><a href="https://github.com/chainsawfish" target="_blank" >GitHub</a></p>
+        <p><a href="https://rs.school/js/" target="_blank"><img class="logo" src="https://rs.school/images/rs_school_js.svg" alt="RS SCHOOL"></a></p>
+    </div>
+</footer>
 </body>
+
+</html>
